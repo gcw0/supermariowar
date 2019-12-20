@@ -259,7 +259,7 @@ void GraphicsSDL::FlipScreen()
 
 void GraphicsSDL::RecreateWindow(bool fullscreen)
 {
-    Uint32 flags = SDL_SWSURFACE | SDL_HWACCEL;
+    Uint32 flags = SDL_HWSURFACE | SDL_TRIPLEBUF;
     if (fullscreen)
         flags |= SDL_FULLSCREEN;
 

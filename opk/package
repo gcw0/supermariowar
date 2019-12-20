@@ -26,8 +26,8 @@ Icon=icon
 Terminal=false
 Type=Application
 Categories=games;
-X-OD-NeedsDownscaling=true' > opk/default.gcw0.desktop
+X-OD-NeedsDownscaling=true' > opk/default."$1".desktop
 
-mksquashfs ./opk smw_gcw0.opk -all-root -noappend -no-exports -no-xattrs
+mksquashfs ./opk smw_"$1".opk -all-root -noappend -no-exports -no-xattrs
 
 rm -r opk
